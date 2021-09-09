@@ -15,11 +15,13 @@ from random import randint
 # Begin your solution here...
 
 print("Your fortune cookie says...")
-random_int: int = randint(1, 3)
+random_int: int = randint(1, 4)
 if (random_int == 1):
     print("You will life a very happy life.")
 elif (random_int == 2):
     print("You will see a dark day soon.")
+elif (random_int == 3):
+    print("Manifest the life you want.")
 else:
     print("Good things are going to come.")
 
