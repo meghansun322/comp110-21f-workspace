@@ -2,16 +2,16 @@
 
 __author__ = "730396963"
 
-input: str = input("Enter a word: ")
+input_str: str = input("Enter a word: ")
 
 is_duplicate: bool = False
 tracker_1: int = 0
 
-while tracker_1 < len(input):
+while tracker_1 < len(input_str):
     tracker_2: int = tracker_1 + 1
-    current_char: str = input[tracker_1]
-    while tracker_2 < len(input):
-        if (current_char == input[tracker_2]):
+    current_char: str = input_str[tracker_1]
+    while tracker_2 < len(input_str):
+        if (current_char == input_str[tracker_2]):
             is_duplicate = True
 
         tracker_2 = tracker_2 + 1

@@ -4,14 +4,17 @@ __author__ = "730396963"
 
 
 # Begin your solution here...
-input: int = int(input("Enter an int: "))
-if (input % 2 == 0) & (input % 7 == 0):
+input_str: str = input("Enter an int: ")
+
+input_int = int(input_str)
+
+if (input_int % 2 == 0) & (input_int % 7 == 0):
     print("TAR HEELS")
 else:
-    if(input % 2 == 0):
+    if(input_int % 2 == 0):
         print("TAR")
     else:
-        if(input % 7 == 0):
+        if(input_int % 7 == 0):
             print("HEELS")
         else:
             print("CAROLINA")
