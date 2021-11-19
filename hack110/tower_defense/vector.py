@@ -1,6 +1,7 @@
 from __future__ import annotations
 import math
 
+
 class Vector:
     x: float
     y: float
@@ -8,12 +9,11 @@ class Vector:
     def __init__(self, x: float, y: float):
         self.x = x
         self.y = y
-    
 
     def __add__(self, rhs: Vector) -> Vector:
         """Overload the addition operator for Vectors."""
         return Vector(self.x + rhs.x, self.y + rhs.y)
-    
+
     def __mul__(self, z: float) -> Vector:
         """Overload the multiplication operator for Vectors."""
         return Vector(self.x * z, self.y * z)
@@ -30,11 +30,10 @@ class Vector:
 
     def normalize(self) -> Vector:
         return self.__div__(self.magnitude())
-    
-    
+
     def __sub__(self, rhs: Vector) -> Vector:
         """Overload the multiplication operator for Vectors."""
-        return Vector(self.x - rhs.x , self.y - rhs.y)
+        return Vector(self.x - rhs.x, self.y - rhs.y)
 
     def to_tuple(self) -> tuple:
         return (self.x, self.y)

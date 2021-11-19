@@ -1,7 +1,9 @@
-from enemy import Enemy
+from fish import Fish
 from projectile import Projectile
 from fighter import Fighter
 from vector import Vector
+
+
 class GameManager:
     """Tracks all entities on screen, handles character stats and values, increases difficulty, and tracks collisions."""
 
@@ -12,5 +14,5 @@ class GameManager:
         distance: Vector = distance_vector.magnitude()
         if(distance < 20):
             return True
-        else: return False
-    
+        else:
+            return False
